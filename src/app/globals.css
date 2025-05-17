@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-padding-top: 4rem;
+}
+
+body {
+  @apply bg-fondo text-white;
+}
+
+/* 🔥 Animación personalizada tipo “anime pulse” */
+@keyframes animePulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(200, 50, 50, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 10px 4px rgba(200, 50, 50, 0.6);
+  }
+}
+
+.animate-anime-pulse {
+  animation: animePulse 3s infinite ease-in-out;
+}
+
+@layer components {
+  .titulo-de-seccion {
+    @apply text-4xl sm:text-5xl font-extrabold text-rojo-primario mb-16 text-center scroll-mt-24;
+  }
+
+  .decorado-subrayado::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -0.75rem;
+    transform: translateX(-50%);
+    width: 8rem;
+    height: 0.25rem;
+    background-color: theme('colors.rojo-secundario');
+    border-radius: 9999px;
+    animation: pulse 2s infinite;
+  }
+}
+
+@keyframes fondo-movimiento {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.fondo-animado {
+  background: linear-gradient(-45deg, #1a1a1a, #2a2a2a, #1a1a1a);
+  background-size: 400% 400%;
+  animation: fondo-movimiento 15s ease infinite;
+}
+
+
