@@ -41,12 +41,13 @@ export default function Portfolio() {
 
       {/* Galería */}
       <div className="columns-1 sm:columns-2 gap-6 space-y-6">
-        {[1, 2, 3, 4].map((i, index) => {
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((i, index) => {
           const marginTop = {
             1: "mt-0",
             2: "mt-16",
             3: "mt-6",
             4: "mt-24",
+            5: "mt-20",
           }[i];
 
           return (

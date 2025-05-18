@@ -1,6 +1,21 @@
 "use client";
+import { useEffect, useState } from "react";
 
 export default function Hero() {
+  const fullText = "Ilustradora digital apasionada por los colores, los personajes y contar historias a través del arte.";
+  const [displayedText, setDisplayedText] = useState("");
+
+  useEffect(() => {
+    let i = 0;
+    const interval = setInterval(() => {
+      setDisplayedText(fullText.slice(0, i + 1));
+      i++;
+      if (i >= fullText.length) clearInterval(interval);
+    }, 30); // velocidad
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section
       id="inicio"
@@ -16,10 +31,8 @@ export default function Hero() {
         </h2>
       </div>
 
-      <p className="text-xl sm:text-2xl lg:text-3xl max-w-2xl mx-auto leading-relaxed 
-                    text-gray-900 dark:text-crema">
-        Ilustradora digital apasionada por los colores, los personajes y contar
-        historias a través del arte.
+      <p className="text-xl sm:text-2xl lg:text-3xl max-w-2xl mx-auto leading-relaxed text-gray-900 dark:text-crema min-h-[100px]">
+        {displayedText}
       </p>
     </section>
   );
