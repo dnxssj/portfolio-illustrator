@@ -8,7 +8,7 @@ export default function Portfolio() {
   const closeModal = () => setSelectedImg(null);
 
   return (
-    <section
+    <section id="portfolio"
       className="max-w-5xl mx-auto px-4 pb-16 
                  text-black dark:text-crema transition-colors duration-300"
     >
