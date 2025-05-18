@@ -42,16 +42,6 @@ export default function About() {
         viewport={{ once: true }}
         className="mt-12"
       >
-        <h3 className="text-2xl lg:text-3xl font-semibold text-rojo-secundario mb-6">
-          Herramientas
-        </h3>
-        <ul className="list-disc list-inside space-y-3 text-lg sm:text-xl lg:text-2xl">
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-        </ul>
       </motion.div>
     </section>
   );
