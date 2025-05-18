@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 <body className="
   bg-crema 
   text-black 
-  dark:bg-fondo dark:text-crema 
+  dark:bg-[url('/textures/texture2.png')] dark:text-crema 
   transition-colors duration-300 
   bg-[url('/textures/texture1.jpg')] 
   bg-cover bg-fixed bg-center 
