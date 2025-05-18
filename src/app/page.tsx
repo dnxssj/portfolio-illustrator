@@ -4,7 +4,7 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <Navbar />

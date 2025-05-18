@@ -1,3 +1,5 @@
+"use client";
+
 export default function Footer() {
   return (
     <footer className="bg-crema dark:bg-fondo text-rootbeer dark:text-crema text-center py-6 border-t border-rojo-secundario transition-colors duration-300">
@@ -7,15 +9,15 @@ export default function Footer() {
           © {new Date().getFullYear()} Lerka — Todos los derechos reservados
         </span>
         <span className="font-semibold text-black hover:text-vividred dark:text-crema dark:hover:text-rojo-secundario transition-colors">
-          Made by DNX
+          Hecho por DNX
         </span>
         <div className="flex gap-4 items-center">
           <a
-          href="mailto:contacto@lerka.art"
-          className="font-semibold text-black hover:text-vividred dark:text-crema dark:hover:text-rojo-secundario transition-colors"
-        >
-          contacto@lerka.art
-        </a>
+            href="mailto:contacto@lerka.art"
+            className="font-semibold text-black hover:text-vividred dark:text-crema dark:hover:text-rojo-secundario transition-colors"
+          >
+            contacto@lerka.art
+          </a>
           <span className="hidden sm:inline">·</span>
           <a
             href="https://instagram.com/lerka.art"
@@ -25,7 +27,6 @@ export default function Footer() {
           >
             @lerka.art
           </a>
-
         </div>
       </div>
     </footer>
