@@ -31,9 +31,12 @@ useEffect(() => {
 }, [darkMode]);
 
   return (
-    <header className="fixed top-0 w-full bg-fondo/90 backdrop-blur-md z-50 border-b border-rojo-secundario">
+<header className="fixed top-0 w-full bg-crema/80 dark:bg-fondo/90 backdrop-blur-md z-50 border-b border-rojo-secundario transition-colors duration-300">
+
+    
       <nav className="flex items-center justify-between max-w-5xl mx-auto px-4 py-3">
-        <h1 className="text-3xl font-bold text-white tracking-wide">LERKA</h1>
+      <h1 className="text-3xl font-bold text-rootbeer dark:text-white tracking-wide transition-colors">LERKA</h1>
+
 
         {/* Desktop links + icono modo */}
         <ul className="hidden md:flex gap-6 text-base font-medium items-center">
@@ -41,7 +44,9 @@ useEffect(() => {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-white hover:text-rojo-secundario transition-colors"
+                className="text-rootbeer dark:text-white hover:text-black transition-colors"
+
+
               >
                 {link.label}
               </a>

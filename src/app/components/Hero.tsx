@@ -5,7 +5,7 @@ export default function Hero() {
     <section
       id="inicio"
       className="min-h-screen pt-24 flex flex-col items-center justify-center text-center px-4 
-                 bg-crema text-black dark:bg-fondo dark:text-crema transition-colors duration-300"
+                 text-black dark:text-crema transition-colors duration-300"
     >
       <div className="mb-10">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl text-rojo-base font-medium">

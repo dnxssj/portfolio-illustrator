@@ -4,11 +4,11 @@ import { motion } from "../../../lib/motion";
 
 export default function About() {
   return (
-    <section
-      id="about"
-      className="max-w-5xl mx-auto px-4 pb-16 
-                 bg-crema text-black dark:bg-fondo dark:text-crema transition-colors duration-300"
-    >
+<section
+  className="max-w-5xl mx-auto px-4 pb-16 
+             text-black dark:text-crema transition-colors duration-300"
+>
+
       <motion.h2
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

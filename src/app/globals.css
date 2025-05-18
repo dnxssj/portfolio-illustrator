@@ -4,6 +4,7 @@
 
 html {
   scroll-padding-top: 4rem;
+  cursor: url('/cursors/pincel.png') 0 0, auto;
 }
 
 body {
@@ -60,5 +61,4 @@ body {
   background-size: 400% 400%;
   animation: fondo-movimiento 15s ease infinite;
 }
-
 
